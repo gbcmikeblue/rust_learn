@@ -37,8 +37,9 @@ fn main() {
     // crate::complex_types::main::demo3();
 
     // crate::complex_types::main::demo4();
-    crate::complex_types::main::demo5();
-
+    // crate::complex_types::main::demo5();
+    // crate::complex_types::main::demo6_replace();
+    crate::complex_types::main::demo7_delete();
 
     println!("this is main.rs");
 }
