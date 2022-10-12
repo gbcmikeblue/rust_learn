@@ -125,4 +125,22 @@ pub mod main {
 
     }
 
+    pub fn demo8_concatenate() {
+        let string_append = String::from("hello ");
+        let string_rust = String::from("rust");
+        // 使用 &string_rust 会自动解引用为 &str
+        let result = string_append + &string_rust;
+        let mut result = result + "!";
+        result += "!!!";
+
+        dbg!(result);
+
+        let s1 = String::from("hello,");
+        let s2 = String::from("rust!");
+        // 使用 &string_rust 会自动解引用为 &str
+        let s3 = s1 + &s2;
+        assert_eq!(s3, "hello,rust!");
+        // dbg!(s1);
+        dbg!(s2);
+    }   
 }
