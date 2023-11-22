@@ -3,3 +3,5 @@ exec_files/
 /.vscode
 .DS_Store
 code/target
+
+target/
